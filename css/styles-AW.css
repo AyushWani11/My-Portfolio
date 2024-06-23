@@ -318,7 +318,7 @@ body{
     transform: translateX(50px);
 }
 
-@media screen and (min-width: 900px) and (max-width: 1350px) {
+@media screen and (min-width: 1100px) and (max-width: 1350px) {
 
     .links a:nth-child(4){
         display: none;
@@ -333,33 +333,23 @@ body{
     }
 }
 
-@media screen and (min-width:900px) and (max-width: 1200px) {
+@media screen and (min-width:1100px) and (max-width: 1200px) {
 
    .photoimg div{
     width: 100%
    }
 
-
-}
-
-@media screen and (min-width:900px) and (max-width: 1100px) {
-    #introgrid div span:last-child {
+     #introgrid div span:last-child {
       display: none;
     }
 
     #introgrid{
         font-size: 3vw;
     }
-  }
 
-@media screen and (min-width:900px) and (max-width: 950px){
-
-    .links a{
-        font-size: 14px;
-    }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1100px){
     #scrollgif{
         display: none;
      }
