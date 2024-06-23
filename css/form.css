@@ -1,0 +1,143 @@
+
+.contact-form{
+    background-color: #000000;
+    padding: 120px 72px;
+    font-family: "Sen"
+}
+
+.contact-grid{
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0px auto;
+}
+
+.form-wrapper{
+    margin-right: 60px;
+}
+
+.form-wrapper p{
+    font-family: "Sen";
+    font-size: larger;
+    font-weight: 500;
+    padding-left: 8px;
+    color: rgb(132 145 160);
+}
+
+.message-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.form-label{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.form-input{
+    cursor: text;
+    margin-top: 8px;
+    margin-bottom: 40px;
+    border: none;
+    background-color: rgb(24, 24, 35);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+}
+
+.text-field{
+    cursor: text;
+    margin-top: 8px;
+    margin-bottom: 40px;
+    border: none;
+    background-color: rgb(24, 24, 35);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    padding: 8px 12px;
+}
+
+.form-input:focus, .text-field:focus {
+    font-family: "Sen";
+    border-color: transparent; /* Remove border */
+    box-shadow: none; /* Remove box shadow */
+    outline: none; /* Remove outline */
+}
+
+
+.form-button{
+    width: 100%;
+    padding: 24px 15px;
+    background-color: #5221e6;
+    color: aliceblue;
+    border: none;
+    font-size: larger;
+    font-weight: bold;
+    transition: transform ease 0.3s;
+}
+
+.form-button:hover{
+   transform: scale(1.05);
+}
+
+.invalid {
+    border: 1px solid red;
+}
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}
+
+#submitted-message{
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    padding: 24px 15px;
+    background-color: rgb(60 199 78);
+    border: none;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.heading-intro2{
+    margin-top: 0;
+    font-size: 4em;
+    display: inline-block;
+    font-weight: bold;
+   
+}
+
+@media screen and (max-width:1300px) {
+    .heading-intro2{
+    font-size: 3em;
+    }
+}
+
+@media screen and (max-width:1100px) {
+
+    .contact-form{
+        padding: 120px 30px;
+    }
+
+    .heading-intro2{
+        margin-bottom: 0;
+    }
+
+    .contact-grid{
+        color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(1fr, 5);
+        margin: 0px auto;
+    }
+
+    .form-wrapper p{
+        margin-bottom: 50px;
+    }
+}

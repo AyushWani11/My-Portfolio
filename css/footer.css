@@ -1,0 +1,105 @@
+
+footer{
+    font-family: "sen";
+    height: 450px;
+    padding: 80px 72px;
+    background-color: rgb(24, 24, 35);
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-grid{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 30px;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left h1{
+    font-size: 2.4em;
+}
+
+.logo{
+    height:30px;
+    width: 30px;
+    margin-right: 12px;
+    transition: filter ease 0.3s, transform ease 0.3s;
+}
+
+.logo:hover{
+    cursor: pointer;
+    filter: invert(50%);
+  transform: translateY(-2px);
+
+}
+
+#mail-link{
+    color: rgb(132 145 160);
+    transition: color ease 0.3s;
+}
+
+#mail-link:hover{
+    cursor: pointer;
+    color: aqua;
+}
+
+.footer-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.link-column{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.link-column a{
+    padding: 20px 20px;
+    display: inline-block;
+    width: fit-content;
+    transition: color ease 0.3s, transform ease 0.3s;
+    white-space: nowrap;
+}
+
+.link-column a:hover{
+    cursor: pointer;
+    color: aqua;
+    transform: translateX(5px);
+}
+
+@media screen and (max-width: 750px){
+    .footer-grid{
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: dense;
+        row-gap: 30px;
+    }
+    .footer-left{
+        flex-direction: row;
+        align-items: center;
+    }
+    footer{
+        padding: 30px 30px;
+    }
+    .link-column{
+        align-items: center;
+    }
+    .footer-left h1{
+        font-size: 2em;
+    }
+    
+}

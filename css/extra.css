@@ -1,0 +1,160 @@
+
+.extra{
+    background-color: #000000;
+    font-family: "Sen";
+    padding: 120px 72px;
+  }
+
+  .extra-content{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 35px;
+    height: auto;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+  }
+
+  .extra-container{
+    border: 1px dashed #626a73;
+    position: relative;
+    height: calc(1.69 * 21.09vw);
+    background-color: rgb(48, 48, 48);
+    border-radius: 10px;
+  }
+
+  .extra-2{
+    top: 30px;
+  }
+
+  .extra-3{
+    top: 15px;
+  }
+
+  .extra-4{
+    bottom: 10px;
+  }
+
+  .image-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: inherit;
+    image-rendering: pixelated;
+    transition: transform ease 0.3s;
+}
+
+#image-wrapper1{
+    transform: rotateZ(0deg);
+    transition: transform ease 0.5s;
+}
+
+#image-wrapper1.visible{
+  transform: rotateZ(3deg);
+  transition: transform ease 0.5s;
+}
+
+.image-wrapper:hover img{
+    transform: scale(1.05);
+}
+
+#image-wrapper2{
+  transform: rotateZ(0deg);
+  transition: transform ease 0.5s;
+}
+
+#image-wrapper2.visible{
+  transform: rotateZ(-3deg);
+  transition: transform ease 0.5s;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 25px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for opacity */
+    transform: translateX(-50px);
+}
+
+.image-wrapper:hover .overlay-text {
+    opacity: 1; /* Show overlay text on hover */
+    transform: translateX(0);
+}
+
+@media screen and (max-width:1300px) {
+  .extra{
+    background-color: #000000;
+    font-family: "Sen";
+    padding: 80px 72px;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .extra-content{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 30px;
+    height: auto;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+  }
+
+  .extra-container{
+    border: 1px dashed #626a73;
+    position: relative;
+    height: calc(1.69 * 42.2vw);
+    background-color: rgb(48, 48, 48);
+    border-radius: 10px;
+    transform:scale(95%);
+  }
+
+  
+  .extra-2{
+    top: 0;
+  }
+
+  .extra-3{
+    top: 0;
+  }
+
+  .extra-4{
+    bottom: 0;
+  }
+
+}
+
+@media screen and (max-width:900px) {
+  
+  .extra-container{
+    border: 1px dashed #626a73;
+    position: relative;
+    height: calc(1.69 * 30.2vw);
+    background-color: rgb(48, 48, 48);
+    border-radius: 10px;
+  }
+
+
+}

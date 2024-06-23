@@ -1,0 +1,86 @@
+
+#achieve{
+    position: relative;
+    background-color: rgb(251 228 255);
+    font-family: "Sen";
+    color: rgb(0, 0, 0);
+  }
+
+  .achievebg{
+    background-image: url(../images/achievebg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 120px 72px;
+    padding-left: 90px;
+  }
+
+  .achieve-content{
+    width: 60%;
+  }
+
+  .achieve-content h1{
+    margin-top: 0;
+    width: fit-content;
+    color: rgb(48, 48, 48);
+    text-shadow: 0 0 10px rgba(11, 11, 11, 0.192);
+    font-size: 3.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .achieve-content p{
+    margin-top: 0;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    margin-bottom: 60px;
+  }
+
+  .achieve-content li{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    margin: 20px 0px;
+  }
+
+  .rank{
+    font-family: "Dancing Script";
+    font-weight: bold;
+    background-color: yellow;
+    padding: 0px 5px;
+  }
+
+  @media screen and (max-width: 1200px){
+    
+    .achieve-content{
+      width: 70%;
+    }
+
+  }
+
+  @media screen and (max-width: 900px){
+    
+    .achieve-content{
+      width: 80%;
+    }
+
+    .achievebg{
+      padding: 80px 72px;
+      padding-left: 90px;
+    }
+
+  }
+
+  @media screen and (max-width: 750px){
+    
+    .achieve-content{
+      width: 100%;
+    }
+
+    .achieve-content p{
+      font-size: 1.3em;
+    }
+  
+    .achieve-content li{
+      font-size: 1.3em;
+    }
+
+  }
